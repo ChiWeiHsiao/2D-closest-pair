@@ -41,7 +41,7 @@ double closest_strip(Points strip){ //MERGE: O(n)
 
 double DnC(Points px, Points py) {
 	int n=px.size();
-/*BOUNDARY CONDITION: O(1)*/
+/*BOUNDARY CONDITION*/
 	if(n <= 3) return enumerate(px);
 /*DIVIDE: Divide the problem to left/right subset of points. */
 	int mid = n / 2;
@@ -77,13 +77,10 @@ double DnC(Points px, Points py) {
 	return dmin;
 }
 
-/*O(nlogn)*/
 double closest(Points p) {
 	Points px = p, py = p;
-
 	sort(px.begin(), px.end(), cmpx);
 	sort(py.begin(), py.end(), cmpy);
-
 	return DnC(px, py);
 }
 
