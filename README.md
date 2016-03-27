@@ -1,2 +1,2 @@
-# 2D-closest-pair-C-
-Find the euclidean distance of closest pair in O(nlogn) 
+# 2D-closest-pair
+Find the euclidean distance of closest pair in O(nlogn), written in C++
